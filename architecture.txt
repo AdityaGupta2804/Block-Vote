@@ -1,0 +1,308 @@
+contest
+│   .github
+│   └── stale.yml
+│   build
+│   └── contracts
+│       ├── Contest.json
+│       └── Migrations.json
+│   contracts
+│   ├── Contest.sol
+│   └── Migrations.sol
+│   migrations
+│   ├── 1_initial_migration.js
+│   └── 2_deploy_contacts.js
+│   routes
+│   ├── admin_login.js
+│   ├── dashboard-route.js
+│   ├── first_page.js
+│   ├── login-route.js
+│   ├── logout-route.js
+│   ├── main.js
+│   ├── registration-route.js
+│   ├── table_view.js
+│   └── user.js
+│   src
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── material-dashboard-rtl.css
+│   │   │   ├── material-dashboard.css
+│   │   │   ├── material-dashboard.css.map
+│   │   │   └── material-dashboard.min.css
+│   │   ├── demo
+│   │   │   ├── demo.css
+│   │   │   └── demo.js
+│   │   ├── img
+│   │   │   ├── faces
+│   │   │   │   ├── avatar.jpg
+│   │   │   │   ├── card-profile1-square.jpg
+│   │   │   │   ├── card-profile2-square.jpg
+│   │   │   │   └── marc.jpg
+│   │   │   ├── apple-icon.png
+│   │   │   ├── bg2.jpg
+│   │   │   ├── city-profile.jpg
+│   │   │   ├── city.jpg
+│   │   │   ├── cover.jpg
+│   │   │   ├── favicon.png
+│   │   │   ├── mask.png
+│   │   │   ├── new_logo.png
+│   │   │   ├── sidebar-1.jpg
+│   │   │   ├── sidebar-2.jpg
+│   │   │   ├── sidebar-3.jpg
+│   │   │   └── sidebar-4.jpg
+│   │   ├── js
+│   │   │   ├── core
+│   │   │   │   ├── bootstrap-material-design.min.js
+│   │   │   │   ├── jquery.min.js
+│   │   │   │   └── popper.min.js
+│   │   │   ├── plugins
+│   │   │   │   ├── arrive.min.js
+│   │   │   │   ├── bootstrap-datetimepicker.min.js
+│   │   │   │   ├── bootstrap-notify.js
+│   │   │   │   ├── bootstrap-selectpicker.js
+│   │   │   │   ├── bootstrap-tagsinput.js
+│   │   │   │   ├── chartist.min.js
+│   │   │   │   ├── fullcalendar.min.js
+│   │   │   │   ├── jasny-bootstrap.min.js
+│   │   │   │   ├── jquery-jvectormap.js
+│   │   │   │   ├── jquery.bootstrap-wizard.js
+│   │   │   │   ├── jquery.dataTables.min.js
+│   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   ├── jquery.validate.min.js
+│   │   │   │   ├── moment.min.js
+│   │   │   │   ├── nouislider.min.js
+│   │   │   │   ├── perfect-scrollbar.jquery.min.js
+│   │   │   │   └── sweetalert2.js
+│   │   │   ├── material-dashboard.js
+│   │   │   ├── material-dashboard.js.map
+│   │   │   └── material-dashboard.min.js
+│   │   └── scss
+│   │       ├── material-dashboard
+│   │       │   ├── bootstrap
+│   │       │   │   └── scss
+│   │       │   │       ├── mixins
+│   │       │   │       │   ├── _alert.scss
+│   │       │   │       │   ├── _background-variant.scss
+│   │       │   │       │   ├── _badge.scss
+│   │       │   │       │   ├── _border-radius.scss
+│   │       │   │       │   ├── _box-shadow.scss
+│   │       │   │       │   ├── _breakpoints.scss
+│   │       │   │       │   ├── _buttons.scss
+│   │       │   │       │   ├── _caret.scss
+│   │       │   │       │   ├── _clearfix.scss
+│   │       │   │       │   ├── _float.scss
+│   │       │   │       │   ├── _forms.scss
+│   │       │   │       │   ├── _gradients.scss
+│   │       │   │       │   ├── _grid-framework.scss
+│   │       │   │       │   ├── _grid.scss
+│   │       │   │       │   ├── _hover.scss
+│   │       │   │       │   ├── _image.scss
+│   │       │   │       │   ├── _list-group.scss
+│   │       │   │       │   ├── _lists.scss
+│   │       │   │       │   ├── _nav-divider.scss
+│   │       │   │       │   ├── _navbar-align.scss
+│   │       │   │       │   ├── _pagination.scss
+│   │       │   │       │   ├── _reset-text.scss
+│   │       │   │       │   ├── _resize.scss
+│   │       │   │       │   ├── _screen-reader.scss
+│   │       │   │       │   ├── _size.scss
+│   │       │   │       │   ├── _table-row.scss
+│   │       │   │       │   ├── _text-emphasis.scss
+│   │       │   │       │   ├── _text-hide.scss
+│   │       │   │       │   ├── _text-truncate.scss
+│   │       │   │       │   ├── _transition.scss
+│   │       │   │       │   └── _visibility.scss
+│   │       │   │       ├── utilities
+│   │       │   │       │   ├── _align.scss
+│   │       │   │       │   ├── _background.scss
+│   │       │   │       │   ├── _borders.scss
+│   │       │   │       │   ├── _clearfix.scss
+│   │       │   │       │   ├── _display.scss
+│   │       │   │       │   ├── _embed.scss
+│   │       │   │       │   ├── _flex.scss
+│   │       │   │       │   ├── _float.scss
+│   │       │   │       │   ├── _position.scss
+│   │       │   │       │   ├── _screenreaders.scss
+│   │       │   │       │   ├── _sizing.scss
+│   │       │   │       │   ├── _spacing.scss
+│   │       │   │       │   ├── _text.scss
+│   │       │   │       │   └── _visibility.scss
+│   │       │   │       ├── _alert.scss
+│   │       │   │       ├── _badge.scss
+│   │       │   │       ├── _breadcrumb.scss
+│   │       │   │       ├── _button-group.scss
+│   │       │   │       ├── _buttons.scss
+│   │       │   │       ├── _card.scss
+│   │       │   │       ├── _carousel.scss
+│   │       │   │       ├── _close.scss
+│   │       │   │       ├── _code.scss
+│   │       │   │       ├── _custom-forms.scss
+│   │       │   │       ├── _dropdown.scss
+│   │       │   │       ├── _forms.scss
+│   │       │   │       ├── _functions.scss
+│   │       │   │       ├── _grid.scss
+│   │       │   │       ├── _images.scss
+│   │       │   │       ├── _input-group.scss
+│   │       │   │       ├── _jumbotron.scss
+│   │       │   │       ├── _list-group.scss
+│   │       │   │       ├── _media.scss
+│   │       │   │       ├── _mixins.scss
+│   │       │   │       ├── _modal.scss
+│   │       │   │       ├── _nav.scss
+│   │       │   │       ├── _navbar.scss
+│   │       │   │       ├── _pagination.scss
+│   │       │   │       ├── _popover.scss
+│   │       │   │       ├── _print.scss
+│   │       │   │       ├── _progress.scss
+│   │       │   │       ├── _reboot.scss
+│   │       │   │       ├── _root.scss
+│   │       │   │       ├── _tables.scss
+│   │       │   │       ├── _tooltip.scss
+│   │       │   │       ├── _transitions.scss
+│   │       │   │       ├── _type.scss
+│   │       │   │       ├── _utilities.scss
+│   │       │   │       ├── _variables.scss
+│   │       │   │       ├── bootstrap-grid.scss
+│   │       │   │       ├── bootstrap-reboot.scss
+│   │       │   │       └── bootstrap.scss
+│   │       │   ├── cards
+│   │       │   │   ├── _card-plain.scss
+│   │       │   │   ├── _card-profile.scss
+│   │       │   │   └── _card-stats.scss
+│   │       │   ├── mixins
+│   │       │   │   ├── _alert.scss
+│   │       │   │   ├── _animations.scss
+│   │       │   │   ├── _breakpoints.scss
+│   │       │   │   ├── _buttons.scss
+│   │       │   │   ├── _chartist.scss
+│   │       │   │   ├── _colored-shadows.scss
+│   │       │   │   ├── _drawer.scss
+│   │       │   │   ├── _forms.scss
+│   │       │   │   ├── _hover.scss
+│   │       │   │   ├── _layout.scss
+│   │       │   │   ├── _navbar-colors.scss
+│   │       │   │   ├── _navs.scss
+│   │       │   │   ├── _sidebar-color.scss
+│   │       │   │   ├── _transparency.scss
+│   │       │   │   ├── _type.scss
+│   │       │   │   ├── _utilities.scss
+│   │       │   │   ├── _variables.scss
+│   │       │   │   └── _vendor-prefixes.scss
+│   │       │   ├── plugins
+│   │       │   │   ├── _animate.scss
+│   │       │   │   ├── _chartist.scss
+│   │       │   │   └── _perfect-scrollbar.scss
+│   │       │   ├── variables
+│   │       │   │   ├── _body.scss
+│   │       │   │   ├── _bootstrap-material-design-base.scss
+│   │       │   │   ├── _bootstrap-material-design.scss
+│   │       │   │   ├── _brand.scss
+│   │       │   │   ├── _buttons.scss
+│   │       │   │   ├── _card.scss
+│   │       │   │   ├── _code.scss
+│   │       │   │   ├── _colors-map.scss
+│   │       │   │   ├── _colors.scss
+│   │       │   │   ├── _custom-forms.scss
+│   │       │   │   ├── _drawer.scss
+│   │       │   │   ├── _dropdown.scss
+│   │       │   │   ├── _forms.scss
+│   │       │   │   ├── _layout.scss
+│   │       │   │   ├── _list-group.scss
+│   │       │   │   ├── _menu.scss
+│   │       │   │   ├── _modals.scss
+│   │       │   │   ├── _nav.scss
+│   │       │   │   ├── _pagination.scss
+│   │       │   │   ├── _shadow.scss
+│   │       │   │   ├── _snackbar.scss
+│   │       │   │   ├── _spacing.scss
+│   │       │   │   ├── _state.scss
+│   │       │   │   ├── _tables.scss
+│   │       │   │   ├── _tooltip.scss
+│   │       │   │   └── _type.scss
+│   │       │   ├── _alerts.scss
+│   │       │   ├── _buttons.scss
+│   │       │   ├── _cards.scss
+│   │       │   ├── _checkboxes.scss
+│   │       │   ├── _core-bootstrap.scss
+│   │       │   ├── _dropdown.scss
+│   │       │   ├── _example-pages.scss
+│   │       │   ├── _fixed-plugin.scss
+│   │       │   ├── _footers.scss
+│   │       │   ├── _forms.scss
+│   │       │   ├── _headers.scss
+│   │       │   ├── _images.scss
+│   │       │   ├── _info-areas.scss
+│   │       │   ├── _input-group.scss
+│   │       │   ├── _misc.scss
+│   │       │   ├── _mixins.scss
+│   │       │   ├── _navbar.scss
+│   │       │   ├── _popover.scss
+│   │       │   ├── _popups.scss
+│   │       │   ├── _radios.scss
+│   │       │   ├── _responsive.scss
+│   │       │   ├── _ripples.scss
+│   │       │   ├── _sidebar-and-main-panel.scss
+│   │       │   ├── _social-buttons.scss
+│   │       │   ├── _tables.scss
+│   │       │   ├── _tabs.scss
+│   │       │   ├── _togglebutton.scss
+│   │       │   ├── _tooltip.scss
+│   │       │   ├── _type.scss
+│   │       │   └── _variables.scss
+│   │       └── material-dashboard.scss
+│   ├── css
+│   │   ├── adminstyle.css
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.min.css.map
+│   │   ├── index.css
+│   │   ├── registration_from.css
+│   │   ├── user_dashboard.css
+│   │   └── voter-reg.css
+│   ├── fonts
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   ├── glyphicons-halflings-regular.woff
+│   │   └── glyphicons-halflings-regular.woff2
+│   ├── img
+│   │   ├── 621.jpeg
+│   │   ├── 622.png
+│   │   ├── ev.png
+│   │   ├── home_page.png
+│   │   ├── Sample_User_Icon.png
+│   │   ├── WhatsApp Image 2021-04-16 at 8.42.35 PM.jpeg
+│   │   ├── WhatsApp Image 2021-04-16 at 8.42.39 PM.jpeg
+│   │   ├── WhatsApp Image 2021-04-16 at 8.42.40 PM.jpeg
+│   │   └── WhatsApp Image 2021-04-16 at 8.42.41 PM.jpeg
+│   ├── js
+│   │   ├── app.js
+│   │   ├── bootstrap.min.js
+│   │   ├── truffle-contract.js
+│   │   └── web3.min.js
+│   ├── views
+│   │   ├── admin_login.ejs
+│   │   ├── adminVoterReg.ejs
+│   │   ├── dashboard.ejs
+│   │   ├── emailverify.ejs
+│   │   ├── first_page.ejs
+│   │   ├── login-form.ejs
+│   │   ├── registration-form.ejs
+│   │   └── voter-registration.ejs
+│   ├── adminAddCandidate.html
+│   ├── adminCandidateDetails.html
+│   ├── adminChangePhase.html
+│   ├── index.html
+│   ├── result.html
+│   ├── userInfo.html
+│   ├── vote_area.html
+│   └── voting.html
+│   test
+│   ├── .gitkeep
+│   └── contest.js
+│   .gitattributes
+│   .gitignore
+│   bs-config.js
+│   database.js
+│   package-lock.json
+│   package.json
+│   Project demo.gif
+│   truffle-config.js
