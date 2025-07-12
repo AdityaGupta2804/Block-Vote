@@ -1,6 +1,6 @@
 ##  BlockVote – Decentralized Voting System
 
-## A transparent, secure, and tamper-proof digital voting platform powered by blockchain.##
+## A transparent, secure, and tamper-proof digital voting platform powered by blockchain. ##
 
 ### **Project Demo**
 
